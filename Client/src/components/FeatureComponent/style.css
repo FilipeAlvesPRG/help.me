@@ -1,0 +1,24 @@
+.icon {
+    width: 80px;
+    height: 80px;
+    color: #1875DF;
+    background-color: #F8F8F8;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.title-feature {
+    font-family: 'Lato';
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+.features {
+    height: 260px;
+}
+
+.details-feature {
+    font-family: 'Lato';
+    font-weight: 400;
+}
+

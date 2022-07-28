@@ -1,0 +1,41 @@
+.card {
+    justify-content: center;
+    width: 288px;
+}
+
+#card {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 12px;
+    box-shadow: 0px 4px 6px 6px #E7E9EB;
+    cursor: pointer;
+}
+#card:hover {
+    color: darkgray;
+}
+
+#card-title {
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#card-subtitle {
+    font-family: 'Lato';
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.price-h2 {
+    font-family: 'Lato';
+}
+
+.price-span {
+    font-weight: bold;
+    color: #26C019;
+}
+
+.button-container {
+    padding-top: 24px;
+    text-align: center;
+}

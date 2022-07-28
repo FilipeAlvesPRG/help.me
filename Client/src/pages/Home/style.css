@@ -1,0 +1,96 @@
+.apresentation {
+    background-color: #f8f8f8;
+}
+
+.title-apresentation {
+    padding-top: 60px;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.strong-text {
+    color: #1875DF;
+}
+
+.img-apresentation {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 250px;
+    height: 300px;
+
+}
+
+.title-features {
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 32px;
+    color: #465362;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.container-features {
+    text-align: center;
+}
+
+#ceo {
+    columns: 1;
+    background-color: rgba(24, 116, 223, 16%);
+}
+
+
+.citation-title {
+    font-family: 'Lato';
+    font-weight: bold;
+    color: #465362;
+    font-size: 24px;
+}
+
+.citation-p {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.ceo-image {
+    width: 350px;
+    height: 300px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 60px;
+}
+
+#container-cards {
+    justify-content: space-around;
+}
+
+.title-form {
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 32px;
+    color: #465362;
+}
+
+.submit-button-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.question-form {
+    margin: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.btn {
+    width: 216px;
+    height: 40px;
+}
+
+.container-footer {
+    width: 100%;
+    background-color: rgba(218, 235, 255, 1);
+}

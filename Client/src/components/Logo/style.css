@@ -1,0 +1,11 @@
+.logo-navbar {
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: x-large;
+    color: #1875DF;
+    text-decoration: none;
+}
+
+.logo-navbar:hover {
+    color: #5699e7;
+}

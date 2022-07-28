@@ -1,0 +1,22 @@
+footer {
+    width: 100%;
+    
+}
+
+.bs-icon-footer {
+
+    width: 24px;
+    height: 24px;
+    color: #465362;
+}
+
+.div-icon-footer {
+    padding-top: 12px;
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #465362;
+}
+
+.icon-name-footer {
+    padding-left: 12px;
+}
