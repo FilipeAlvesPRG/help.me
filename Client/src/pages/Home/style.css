@@ -63,6 +63,21 @@
     border-radius: 60px;
 }
 
+.container-title-plans {
+    width: 100%;
+    text-align: center;
+
+}
+
+.title-plans {
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 32px;
+    color: #465362;
+    padding-top: 30px;
+   
+}
+
 #container-cards {
     justify-content: space-around;
 }

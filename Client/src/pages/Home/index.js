@@ -67,8 +67,11 @@ export function Home() {
                     </div>
                 </div>
             </div>
+
             <div className="container">
+
                 <div id="container-cards" className="row">
+                    <div className="container-title-plans"><p className="title-plans">Our plans</p></div>
                     <CardPlansComponents titleCard="Essential" subtitleCard="subtitle" />
                     <CardPlansComponents titleCard="Potential" subtitleCard="subtitle" />
                 </div>
@@ -91,7 +94,7 @@ export function Home() {
                             <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" />
                         </div>
                         <div className="col-12 button-container">
-                            <button type="submit" className="btn btn-primary"> Submit <BsCheck2 className="submit-button-icon"/></button>
+                            <button type="submit" className="btn btn-primary"> Submit <BsCheck2 className="submit-button-icon" /></button>
                         </div>
                     </form>
                 </div>
