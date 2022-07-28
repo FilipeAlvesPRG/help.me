@@ -1,6 +1,6 @@
 import './style.css'
 import { Logo } from '../Logo';
-
+import { MdExitToApp } from "react-icons/md";
 
 export function NavbarComponent() {
   return (
@@ -23,7 +23,7 @@ export function NavbarComponent() {
                 <a className="nav-link" href="#">Updates</a>
               </li>
             </ul>
-            <div className='logout-button'><button className="btn btn-outline-primary" type="submit">Logout</button></div>
+            <div className='logout-button'><button className="btn btn-outline-primary" type="submit">Logout <MdExitToApp className="icon-logout-button"/>  </button></div>
           </div>
         </div>
       </nav>

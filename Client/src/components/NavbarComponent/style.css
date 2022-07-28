@@ -1,6 +1,12 @@
-
 .logout-button {
     padding-right: 48px;
+}
+
+.icon-logout-button {
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+
 }
 
 .logo {
