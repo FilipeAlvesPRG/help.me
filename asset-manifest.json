@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/help.me/static/css/main.1be56328.css",
+    "main.js": "/help.me/static/js/main.b3216dfe.js",
+    "static/media/ceo-image.jpg": "/help.me/static/media/ceo-image.8ea480d7dac8e3747f69.jpg",
+    "static/media/connecting_teams.svg": "/help.me/static/media/connecting_teams.071f42221d6e52aea9d004d7630cc883.svg",
+    "index.html": "/help.me/index.html",
+    "main.1be56328.css.map": "/help.me/static/css/main.1be56328.css.map",
+    "main.b3216dfe.js.map": "/help.me/static/js/main.b3216dfe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1be56328.css",
+    "static/js/main.b3216dfe.js"
+  ]
+}
