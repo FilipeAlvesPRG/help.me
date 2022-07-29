@@ -47,10 +47,9 @@ Open the generated link in your browser
 ```
 
 # Links
-
-<p>[Figma](https://www.figma.com/file/pdWK39eqYl2ilU7gy1QZkw/skill_test_remotish?node-id=0%3A1)</p>
-<p>[Bootstrap](https://getbootstrap.com/)</p>
-<p>[Google Sheets API](https://developers.google.com/sheets/api)</>
+Figma](https://www.figma.com/file/pdWK39eqYl2ilU7gy1QZkw/skill_test_remotish?node-id=0%3A1)
+[Bootstrap](https://getbootstrap.com/)
+[Google Sheets API](https://developers.google.com/sheets/api)
 
 
 
