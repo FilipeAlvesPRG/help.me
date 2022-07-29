@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './style.css'
 import img from '../../assets/connecting_teams.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,9 +8,40 @@ import { CardPlansComponents } from "../../components/CardPlansComponents";
 import { FooterComponent } from "../../components/FooterComponent";
 import ceo_image from '../../assets/ceo-image.jpg';
 import { BsCheck2 } from "react-icons/bs";
+import axios from "axios";
 
 
 export function Home() {
+    const [values, setValues] = useState();
+
+    const handleChangeValues = (value) => {
+        setValues((prevValue) => ({
+            ...prevValue,
+            [value.target.name]: value.target.value,
+        }))
+    }
+
+    const handleClickButton = () => {
+        if (!values?.username) {
+            console.log("Is empty")
+        } else if (!values?.email) {
+            console.log("Is empty")
+        } else if (!values?.doubt) {
+            console.log("Is empty")
+        } else if (document.forms[0].email.value.indexOf('@') === -1) {
+            console.log("testando aqui")
+        } else if (document.forms[0].email.value.indexOf('.') === -1) {
+            console.log("testando aqui 2")
+        } else {
+            console.log("TUDO ESTA PREENCHIDO");
+            axios.post("URI-HERE", values).then(response => {
+                console.log(response);
+                alert("Sucesso! Seus dados foram enviados!")
+            });
+        }
+
+    }
+
     return (
         <div>
             <NavbarComponent />
@@ -69,7 +100,6 @@ export function Home() {
             </div>
 
             <div className="container">
-
                 <div id="container-cards" className="row">
                     <div className="container-title-plans"><p className="title-plans">Our plans</p></div>
                     <CardPlansComponents titleCard="Essential" subtitleCard="subtitle" />
@@ -81,26 +111,27 @@ export function Home() {
                 <div className="question-form">
                     <p className="title-form">Talk to us</p>
                     <form className="row g-3">
-                        <div className="col-md-6">
-                            <label for="inputPassword" className="form-label">Name</label>
-                            <input type="text" className="form-control" id="inputName" placeholder="John " />
+                        <div className="col-md">
+                            <label for="validationDefault01" className="form-label">Name</label>
+                            <input type="text" name="username" onChange={handleChangeValues} className="form-control" id="validationDefault01" required />
                         </div>
-                        <div className="col-md-6">
-                            <label for="inputEmail" className="form-label">Email</label>
-                            <input type="email" className="form-control" id="inputEmail" placeholder="name@example.com" />
+                        <div className="col">
+                            <label for="validationDefault02" className="form-label">Email</label>
+                            <input type="email" name="email" onChange={handleChangeValues} className="form-control" id="validationDefault02" required />
                         </div>
-                        <div className="col-12">
-                            <label for="inputAddress" className="form-label">Address</label>
-                            <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" />
+                        <div className="mb-3">
+                            <label for="validationTextarea" className="form-label">Textarea</label>
+                            <textarea className="form-control" name="doubt" onChange={handleChangeValues} id="validationTextarea" placeholder="Leave your doubt here" required></textarea>
+                            <div className="invalid-feedback">
+                                Required field
+                            </div>
                         </div>
-                        <div className="col-12 button-container">
-                            <button type="submit" className="btn btn-primary"> Submit <BsCheck2 className="submit-button-icon" /></button>
+                        <div className="container-button-form">
+                            <button onClick={() => handleClickButton()} type="submit" className="btn btn-primary" > Submit <BsCheck2 className="submit-button-icon" /></button>
                         </div>
                     </form>
                 </div>
             </div>
-
-
 
             <div className="container-footer">
                 <FooterComponent />

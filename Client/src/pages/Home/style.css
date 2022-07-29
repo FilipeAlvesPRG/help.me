@@ -89,6 +89,11 @@
     color: #465362;
 }
 
+.container-button-form {
+    width: 100%;
+    text-align: center;
+}
+
 .submit-button-icon {
     width: 24px;
     height: 24px;

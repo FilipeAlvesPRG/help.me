@@ -2,11 +2,11 @@ import './style.css'
 
 export function CardPlansComponents(props) {
     return (
-            <div id='card' class="card">
-                <div class="card-body">
+            <div id='card' className="card">
+                <div className="card-body">
                     <div className="text-center">
-                        <h5 id="card-title" class="card-title">{props.titleCard}</h5>
-                        <h6 id="card-subtitle" class="card-subtitle mb-2 text-muted">{props.subtitleCard}</h6>
+                        <h5 id="card-title" className="card-title">{props.titleCard}</h5>
+                        <h6 id="card-subtitle" className="card-subtitle mb-2 text-muted">{props.subtitleCard}</h6>
                     </div>
                     <h2 className="price-h2"><span className="price-span">$49</span>/mo</h2>
                     <p>Benefits:</p>
